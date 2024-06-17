@@ -1,0 +1,103 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+.main{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-filter{
+    height: 568px;
+    width: 1200px;
+    background-color: #e2f3e2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter{
+    margin-top: 12px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.filter span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 120px;
+    height: 80%;
+    border: solid #69c297 2px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #2aa25d;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.filter span:hover{
+    background-color: #0f9d58;
+    color: white;
+    border: none;
+}
+
+.filter span.active{
+    background-color: #0f9d58;
+    color: white;
+    border: none;
+}
+
+.page-change{
+    width: 80%;
+    height: 85%;
+}
+
+.elements-All{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements-All.hide{
+    display: none;
+}
+
+.elements{
+    cursor: pointer;
+    height: 40%;
+    width: 22%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+
+.elements:hover > img{
+    transform:scale(2) rotate(45deg) ;
+}
+
+.elements img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+    transition: transform 0.5s;
+}
+
+
